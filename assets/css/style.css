@@ -916,3 +916,18 @@ textarea.form-input { height: 120px; resize: none; margin-bottom: 20px; }
   transition: all 0.4s ease;
 }
 
+/* মোবাইল স্ক্রিনের জন্য মেনু ফিক্স */
+@media (max-width: 600px) {
+  .navbar-list {
+    display: flex;
+    flex-wrap: wrap; /* মেনুগুলো নিচে নেমে যাবে যদি জায়গা না থাকে */
+    justify-content: center;
+    gap: 10px 15px; /* মেনুর মাঝে গ্যাপ বাড়ানো হলো */
+    padding: 10px;
+  }
+
+  .navbar-link {
+    font-size: 14px; /* ফন্ট সাইজ সামান্য বাড়ানো হলো যাতে পড়তে সুবিধা হয় */
+    padding: 5px 8px;
+  }
+}
